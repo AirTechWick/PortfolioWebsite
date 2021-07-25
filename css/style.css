@@ -264,6 +264,10 @@ header {
     box-shadow: var(--bs);
 }
 
+.G_logo_img {
+    width: 200px;
+}
+
 @media (min-width: 600px) {
     .intro {
         display: grid;
