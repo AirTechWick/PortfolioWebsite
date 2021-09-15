@@ -417,6 +417,8 @@ header {
 }
 
 .portfolio__img {
+    width: 852px;
+    height: 480px;
     transition: transform 750ms cubic-bezier(.5, 0, .5, 1), opacity 250ms linear;
 }
 
@@ -486,4 +488,15 @@ header {
     max-width: 600px;
     margin-left: auto;
     margin-right: auto;
+}
+
+
+.item-descriptions
+{
+    position: absolute;
+    margin-left: 5px;
+    margin-top: 200px;
+    max-width: 320px;
+    color: black;
+    background-color:rgb(218, 227, 233);
 }
