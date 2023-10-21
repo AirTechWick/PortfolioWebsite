@@ -1,5 +1,9 @@
 {
   "dependencies": {
     "sanity": "^3.18.1"
+  },
+  "scripts": {
+    "build": "webpack --config webpack.config.js"
   }
+  
 }
