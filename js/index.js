@@ -1,3 +1,4 @@
+
 const navToggle = document.querySelector('.nav-toggle')
 const navLinks = document.querySelectorAll('.nav__link')
 
@@ -18,3 +19,4 @@ fetch('https://0d7l28rs.api.sanity.io/v1/data/query/production?query=*[_type == 
         document.getElementById('game-desc').innerText = data.result[1].description;
         document.getElementById('work-desc').innerText = data.result[2].description;
     });
+
