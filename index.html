@@ -13,7 +13,9 @@
 
         <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;700;900&display=swap" rel="stylesheet">  
 
-        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/style.css" >
+
+        <link rel="stylesheet" href="node_modules/sal.js/dist/sal.css">
 
     </head>
 
@@ -37,18 +39,18 @@
         </header>
 
         <!-- Introduction -->
-        <section class="intro" id="home">
-            <h1 class="section__title section__title--intro">
-                Hi, I'm <strong>Erik</strong>
-            </h1>
+        <section class="intro" id="home" data-sal="slide-left" data-sal-duration="1200">
+                <h1 class="section__title section__title--intro" >
+                    Hi, I'm <strong>Erik</strong>
+                </h1>
             <p class="section__subtitle section__subtitle--intro">Web & Game Dev</p>
             <img src="img/monkey.svg" alt="placeholder pic of a monkey!" class="intro__img">
         </section>
 
         <!-- My Services -->
-        <section class="my-services" id="services">
-            <h2 class="section__title section__title--services">What I do</h2>
-            <div class="services">
+        <section class="my-services" id="services" >
+            <h2 class="section__title section__title--services" data-sal="slide-right" data-sal-duration="1200">What I do</h2>
+            <div class="services" data-sal="slide-right" data-sal-duration="1200">
                 <div class="ind_service">
                     <h3>Website Development</h3>
                     <p id="web-desc"> I'm happy to work with you to make the best website possible. I will also upkeep your website if you want, whether it be for a business or a hobby website!</p>
@@ -69,7 +71,7 @@
         </section>
 
         <!-- About Me -->
-        <section class="about-me" id="about">
+        <section class="about-me" id="about" data-sal="slide-up" data-sal-duration="1200">
             <h2 class="section__title section__title--about">Who I am</h2>
             <p class="section__subtitle section__subtitle--about"> Program Developer based out of CA</p>
 
@@ -166,6 +168,8 @@
         </footer>
 
         <script src="js/index.js"></script>
+        <script src="node_modules/sal.js/dist/sal.js"></script>
+        <script>sal({once: false});</script>
 
 
     </body>
