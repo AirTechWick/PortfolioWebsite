@@ -140,18 +140,23 @@
 
             </div>
         </section>
-        <div class="anim-wrapper">
-            <canvas id="canvas" width="500" height="500"></canvas>
-            <i class="fab fa-github anim-par"></i>
-
-        </div>
-
 
         <!-- Footer -->
         <footer class="footer">
             <!-- own email address -->
             <a href="mailto:erikbolt11@gmail.com" class="footer__link">erikbolt11@gmail.com</a>
             <ul class="social-list">
+                <li class="social-list__item">
+                    <a class="social-list__link" href="https://github.com/AirTechWick">
+                        <i class="fab fa-github"></i>
+                    </a>
+                </li>
+
+                <li class="social-list__item">
+                    <a class="social-list__link" href="https://airtechwick.blogspot.com/">
+                        <i class="fab fa-blogger"></i>
+                    </a>
+                </li>
 
                 <li class="social-list__item">
                     <a class="social-list__link" href="https://www.linkedin.com/in/erik-rodriguez-33ba5220b/">
@@ -164,29 +169,7 @@
         <script src="https://mciastek.github.io/sal/dist/sal.js"></script>
         <script src="js/index.js"></script>
         <script>sal({once: false});</script>
-        <script src="https://unpkg.com/@rive-app/canvas@2.17.3"></script>
-        <script>
-            const r = new rive.Rive({
-              src: "follow_path.riv",
-              canvas: document.getElementById("canvas"),
-              autoplay: true,
-              stateMachines: "State Machine 1",
-              onLoad: () => {
-                r.resizeDrawingSurfaceToCanvas();
-          
-                // Set up the click event listener on the canvas
-                r.canvas.addEventListener('click', function() {
-                  // Check if hoverCircle state is active
-                  const hoverCircleIsActive = r.stateMachineInputs('State Machine 1').find(input => input.name === 'hoverCircle').value;
-                  
-                  // Redirect if hoverCircle is active
-                  if (hoverCircleIsActive) {
-                    window.open('https://github.com/AirTechWick'); // Replace with your desired URL
-                  }
-                });
-              },
-            });
-          </script>
-          
+
+
     </body>
 </html>

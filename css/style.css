@@ -502,21 +502,3 @@ header {
     color: black;
     background-color:rgb(218, 227, 233);
 }
-
-#canvas {
-    margin: 0 auto;
-}
-
-.anim-wrapper {
-    width: 100%;
-    display: flex;
-    background-color: black;
-}
-
-.anim-par {
-    color: white;
-    position: absolute;
-    left: 48%;
-    transform: translateY(350px);
-    font-size: 3rem;
-}
