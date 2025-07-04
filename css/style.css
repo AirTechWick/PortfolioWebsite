@@ -502,3 +502,7 @@ header {
     color: black;
     background-color:rgb(218, 227, 233);
 }
+
+.section__subtitle--intro {
+  font-size: 20px;
+}
